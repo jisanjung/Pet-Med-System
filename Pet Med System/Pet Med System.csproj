@@ -67,12 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Login.aspx" />
     <Content Include="MedicalOrders.aspx" />
     <Content Include="PlaceOrder.aspx" />
     <Content Include="Prescription.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
